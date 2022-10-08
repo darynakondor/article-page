@@ -14,7 +14,8 @@ body {
   margin: 0 auto;
 }
 
-.header, .footer {
+.header,
+.footer {
   font-family: serif;
   padding: 25px 0;
   position: absolute;
@@ -184,14 +185,16 @@ body {
 .main .section-about-us .container .about-us__authors__anime {
   opacity: 1;
 }
-.main .abuot-us__title, .main .contact__title {
+.main .abuot-us__title,
+.main .contact__title {
   display: inline-block;
   width: 250px;
   border: 7px solid black;
   padding: 13px 0;
   margin-bottom: 35px;
 }
-.main .abuot-us__title h2, .main .contact__title h2 {
+.main .abuot-us__title h2,
+.main .contact__title h2 {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -201,7 +204,8 @@ body {
   text-align: center;
   padding-bottom: 35px;
 }
-.main .section-contact .contact__e-mail .contact__e-mail__teacher, .main .section-contact .contact__e-mail .contact__e-mail__student {
+.main .section-contact .contact__e-mail .contact__e-mail__teacher,
+.main .section-contact .contact__e-mail .contact__e-mail__student {
   line-height: 25px;
 }
 .main .section-contact .contact__e-mail .contact__e-mail__teacher {
@@ -228,6 +232,61 @@ body {
   line-height: 24px;
   font-size: 16.5px;
   color: #e4e1e1;
+}
+
+.btn-to-top {
+  opacity: 0;
+  -webkit-transition: all 0.85s ease;
+  transition: all 0.85s ease;
+}
+.btn-to-top .to-top {
+  visibility: visible;
+  position: fixed;
+  width: 80px;
+  right: 37px;
+  bottom: 65px;
+  margin: 0;
+  z-index: 1000;
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+  text-decoration: none;
+}
+.btn-to-top .to-top::before {
+  top: 0;
+  -webkit-transition: top 0.2s ease-out, background-color 0.2s ease-out 50ms, opacity 0.3s ease-out, -webkit-transform 0.5s cubic-bezier(0.42, 0, 0, 0.99);
+  transition: top 0.2s ease-out, background-color 0.2s ease-out 50ms, opacity 0.3s ease-out, -webkit-transform 0.5s cubic-bezier(0.42, 0, 0, 0.99);
+  transition: top 0.2s ease-out, transform 0.5s cubic-bezier(0.42, 0, 0, 0.99), background-color 0.2s ease-out 50ms, opacity 0.3s ease-out;
+  transition: top 0.2s ease-out, transform 0.5s cubic-bezier(0.42, 0, 0, 0.99), background-color 0.2s ease-out 50ms, opacity 0.3s ease-out, -webkit-transform 0.5s cubic-bezier(0.42, 0, 0, 0.99);
+}
+.btn-to-top .to-top::after {
+  top: 100%;
+  -webkit-transition: top 0.2s ease-out, background-color 0.2s ease-out 0.12s, opacity 0.3s ease-out 0.12s, -webkit-transform 0.3s ease-out 0.05s;
+  transition: top 0.2s ease-out, background-color 0.2s ease-out 0.12s, opacity 0.3s ease-out 0.12s, -webkit-transform 0.3s ease-out 0.05s;
+  transition: top 0.2s ease-out, transform 0.3s ease-out 0.05s, background-color 0.2s ease-out 0.12s, opacity 0.3s ease-out 0.12s;
+  transition: top 0.2s ease-out, transform 0.3s ease-out 0.05s, background-color 0.2s ease-out 0.12s, opacity 0.3s ease-out 0.12s, -webkit-transform 0.3s ease-out 0.05s;
+}
+.btn-to-top .to-top::before, .btn-to-top .to-top::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000;
+}
+.btn-to-top .to-top span {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  font-family: playfair display, serif;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14.5px;
+  -webkit-transition: opacity 0.3s ease-out 70ms;
+  transition: opacity 0.3s ease-out 70ms;
 }
 
 @media (max-width: 767.98px) {
@@ -328,7 +387,8 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .main .about-us__authors .about-us__authors__teacher, .main .about-us__authors .about-us__authors__student {
+  .main .about-us__authors .about-us__authors__teacher,
+.main .about-us__authors .about-us__authors__student {
     border-radius: 50px;
     width: 280px;
     height: 280px;
@@ -339,6 +399,9 @@ body {
   }
   .footer .nav {
     display: none;
+  }
+  .btn-to-top-show-xs-sm-md {
+    opacity: 1;
   }
 }
 @media (min-width: 768px) {
@@ -374,7 +437,8 @@ body {
     line-height: 24px;
     text-transform: uppercase;
   }
-  .header .menu, .footer .menu {
+  .header .menu,
+.footer .menu {
     display: grid;
     grid-template-columns: 0.915fr 0.882fr 1.022fr;
     gap: 40px;
@@ -384,7 +448,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-  .main .about-us__authors .about-us__authors__teacher, .main .about-us__authors .about-us__authors__student {
+  .main .about-us__authors .about-us__authors__teacher,
+.main .about-us__authors .about-us__authors__student {
     border-radius: 200px;
     width: 320px;
     height: 320px;
@@ -397,14 +462,31 @@ body {
   .footer .container .copyright {
     text-align: left;
   }
+  .btn-to-top-show-xs-sm-md {
+    opacity: 1;
+  }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  .btn-to-top-show-lg {
+    opacity: 1;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+  .btn-to-top:hover .to-top::before {
+    left: 34.5%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .btn-to-top:hover .to-top::after {
+    top: 0;
+    left: -34.5%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }/*# sourceMappingURL=style.css.map */
