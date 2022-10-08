@@ -12,3 +12,31 @@ iconMenu.addEventListener("click", function() {
     line_3.classList.toggle("active-l-3");
     border.classList.toggle("border");
 });
+
+
+let links = document.querySelectorAll(".menu__link[data-goto]");
+
+if (links.length > 0) {
+    links.forEach(item => {
+        item.addEventListener("click", menuLinkClick)
+    });
+    function menuLinkClick(e) {
+        const menuLink = e.target;
+        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+            const goToSection = document.querySelector(menuLink.dataset.goto);
+            const goToSectionValue = goToSection.getBoundingClientRect().top + pageYOffset;
+            menu.classList.remove("menu-block");
+            iconMenu.classList.remove("hiden");
+            document.body.classList.remove("overfl-hid");
+            line_1.classList.remove("active-l-1");
+            line_2.classList.remove("active-l-2");
+            line_3.classList.remove("active-l-3");
+            border.classList.add("border");
+            window.scrollTo ({
+                top: goToSectionValue,
+                behavior: "smooth"
+            });
+            e.preventDefault();
+        }
+    }
+}
