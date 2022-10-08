@@ -43,7 +43,7 @@ body {
     .article {
         padding-top: 30px;
         position: relative;
-        left: 0;
+        left: -100%;
         transition: left 0.8s ease 0s;
 
         .article__header {
@@ -167,6 +167,10 @@ body {
                 }
             }
         }
+    }
+
+    .article__active {
+        left: 0;
     }
 
     .section-about-us {

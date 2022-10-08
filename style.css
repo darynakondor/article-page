@@ -41,7 +41,7 @@ body {
 .main .article {
   padding-top: 30px;
   position: relative;
-  left: 0;
+  left: -100%;
   -webkit-transition: left 0.8s ease 0s;
   transition: left 0.8s ease 0s;
 }
@@ -145,6 +145,9 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 20px;
+}
+.main .article__active {
+  left: 0;
 }
 .main .section-about-us {
   margin-top: 30px;
