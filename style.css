@@ -207,6 +207,17 @@ body {
 .main .section-contact .contact__e-mail .contact__e-mail__teacher {
   margin-bottom: 15px;
 }
+.main .section-map {
+  padding: 0 15px;
+  background-color: #f6f4f4;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  margin-bottom: -2px;
+}
+.main .section-map:hover {
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+}
 
 @media (max-width: 767.98px) {
   .header .nav .menu {

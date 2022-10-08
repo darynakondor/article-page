@@ -237,6 +237,15 @@ body {
           }
         }
     }
+    .section-map {
+        padding: 0 15px;
+        background-color: #f6f4f4;
+        filter: grayscale(1);
+        margin-bottom: -2px;
+        &:hover {
+          filter: grayscale(.5);
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
