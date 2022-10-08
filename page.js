@@ -14,17 +14,17 @@ iconMenu.addEventListener("click", function() {
 });
 
 const article = document.querySelector(".article");
-const authorStudent = document.querySelector(".about-us__authors");
+const authors = document.querySelector(".about-us__authors");
 const btnToTop = document.querySelector(".btn-to-top");
 window.addEventListener('scroll', function() {
-    if (window.scrollY >= document.documentElement.clientHeight * 0.72) {
+    if (window.scrollY >= document.documentElement.clientHeight * 0.66) {
       window.requestAnimationFrame(function() {
           article.classList.add('article__active');
       });
     }
     if (window.scrollY >= document.documentElement.clientHeight * 8.76) {
         window.requestAnimationFrame(function() {
-            authorStudent.classList.add('about-us__authors__anime');
+            authors.classList.add('about-us__authors__anime');
         });
     }
     if (window.scrollY >= (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 0.4) {
