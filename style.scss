@@ -168,6 +168,62 @@ body {
         }
     }
 
+    .section-about-us {
+        margin-top: 30px;
+        padding: 25px 0;
+        text-align: center;
+
+        .container {
+            .about-us__authors {
+                gap: 30px;
+
+                .about-us__authors__teacher,
+                .about-us__authors__student {
+                    display: inline-block;
+                    border: 3px solid rgb(112, 110, 110);
+                    margin: 0 auto;
+                    color: #272727;
+                    background-color: rgb(240, 240, 240);
+
+                    &:hover {
+                        background-color: #fff;
+                    }
+
+                    .about-us__authors__teacher__name {
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
+
+                    .about-us__authors__teacher__position {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .about-us__authors {
+                opacity: 0;
+                transition: all 5s ease;
+            }
+
+            .about-us__authors__anime {
+                opacity: 1;
+            }
+        }
+    }
+    .abuot-us__title, .contact__title {
+        display: inline-block;
+        width: 250px;
+        border: 7px solid black;
+        padding: 13px 0;
+        margin-bottom: 35px;
+        h2 {
+          font-size: 30px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -274,6 +330,18 @@ body {
             border-bottom: 1px solid #000;
         }
     }
+    .main {
+        .about-us__authors {
+          display: flex;
+          flex-wrap: wrap;
+          .about-us__authors__teacher, .about-us__authors__student {
+            border-radius: 50px;
+            width: 280px;
+            height: 280px;
+            padding: 45px 10px;
+          }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -318,6 +386,19 @@ body {
             display: grid;
             grid-template-columns: 0.915fr 0.882fr 1.022fr;
             gap: 40px;
+        }
+    }
+    .main {
+        .about-us__authors {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          .about-us__authors__teacher, .about-us__authors__student {
+            border-radius: 200px;
+            width: 320px;
+            height: 320px;
+            padding: 80px 10px;
+          }
         }
     }
 }
