@@ -22,6 +22,22 @@ body {
   width: 100%;
 }
 
+.main {
+  background: rgba(200, 198, 198, 0.25);
+}
+.main .section-banner .banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("./images/cute-girl-studying-computer-home.jpg") top no-repeat;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+}
+
 @media (max-width: 767.98px) {
   .header .nav .menu {
     padding-top: 180px;
