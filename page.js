@@ -50,7 +50,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-let links = document.querySelectorAll(".menu__link[data-goto]");
+let links = document.querySelectorAll(".menu__link[data-goto], .to-top[data-goto], .to-top-text[data-goto]");
 
 if (links.length > 0) {
     links.forEach(item => {

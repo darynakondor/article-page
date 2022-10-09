@@ -39,7 +39,7 @@ body {
   height: 800px;
 }
 .main .article {
-  padding-top: 30px;
+  padding: 30px 0;
   position: relative;
   left: -100%;
   -webkit-transition: left 0.8s ease 0s;
@@ -150,8 +150,7 @@ body {
   left: 0;
 }
 .main .section-about-us {
-  margin-top: 30px;
-  padding: 25px 0;
+  padding: 30px 0;
   text-align: center;
 }
 .main .section-about-us .container .about-us__authors {
@@ -205,9 +204,8 @@ body {
   text-transform: uppercase;
 }
 .main .section-contact {
-  margin-top: 30px;
   text-align: center;
-  padding-bottom: 35px;
+  padding: 30px 0;
 }
 .main .section-contact .contact__e-mail .contact__e-mail__teacher,
 .main .section-contact .contact__e-mail .contact__e-mail__student {
